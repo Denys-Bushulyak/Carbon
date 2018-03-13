@@ -1,14 +1,16 @@
 <?php
-/**
- * User: denys
- * Date: 25.12.17
- * Time: 14:23
+
+/*
+ * This file is part of the Carbon package.
+ *
+ * (c) Denys Bushulyak <denys_bushulyak@icloud.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this repository code.
  */
 
 namespace Carbon;
 
-
-use Carbon\Exceptions\UnknownIntervalException;
 
 class CarbonRange
 {
@@ -78,7 +80,7 @@ class CarbonRange
         return $count;
     }
 
-    public function getWeekendDays($weekendDays = [Carbon::SUNDAY, Carbon::SATURDAY])
+    public function getWeekendDays($weekendDays = array(Carbon::SUNDAY, Carbon::SATURDAY))
     {
         $weekendDays = is_array($weekendDays) ? $weekendDays : array($weekendDays);
 
